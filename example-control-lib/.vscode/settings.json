@@ -1,0 +1,27 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  // The number of spaces a tab is equal to.
+  "editor.tabSize": 2,
+  // Configure glob patterns for excluding files and folders.
+  "files.exclude": {
+    ".git": true,
+    ".gitignore": true,
+    "**/.svn": true,
+    "**/.DS_Store": true,
+    "node_modules": true,
+    "dist": true
+  },
+  // When opening a file, `editor.tabSize` and `editor.insertSpaces` will be detected based on the file contents.
+  "editor.detectIndentation": false,
+  // Enable usage data and errors to be sent to Microsoft.
+  "telemetry.enableTelemetry": false,
+  // Remove trailing spaces automatically
+  "files.trimTrailingWhitespace": true,
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  // Automatically fix TSLint issue on save
+  // Note: This setting is ignored when files.autoSave is set to afterDelay.
+  "tslint.autoFixOnSave": true,
+  // An additional rules directory
+  "tslint.rulesDirectory": "node_modules/codelyzer",
+  "terminal.integrated.scrollback": 10000
+}

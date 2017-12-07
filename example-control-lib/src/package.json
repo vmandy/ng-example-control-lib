@@ -1,0 +1,20 @@
+
+{
+  "name": "@metrino/example-control-lib",
+  "version": "1.0.0-alpha.0",
+  "repository": "https://some-git-server.com/repo.git",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "http://spmonug01/npm/fgmsprivatenpm"
+  },
+  "peerDependencies": {
+    "@angular/core": "^4.1.2",
+    "@angular/common": "^4.1.2",
+    "@ngx-translate/core": "^8.0.0",
+    "rxjs": "^5.4.2",
+    "zone.js": "^0.8.14"
+  },
+  "dependencies": {
+    "@ngx-translate/embedded-loader": "^1.0.0"
+  }
+}

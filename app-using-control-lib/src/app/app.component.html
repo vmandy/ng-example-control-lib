@@ -1,0 +1,8 @@
+<example-header></example-header>
+<div>
+  <p>{{ 'random-text' | translate }}</p>
+  <select (change)='onLangChange($event.target.value)'>
+    <option *ngFor='let lang of something.availableLanguages$ | async'>{{lang}}</option>
+  </select>
+</div>
+<example-footer></example-footer>
