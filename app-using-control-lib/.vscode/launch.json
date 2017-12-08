@@ -7,10 +7,11 @@
     {
       "type": "chrome",
       "request": "launch",
-      "name": "Launch Dev Test App",
+      "name": "Launch QA Test App",
       "url": "http://localhost:4200",
       "sourceMaps": true,
-      "webRoot": "${workspaceRoot}"
+      "webRoot": "${workspaceRoot}",
+      "trace": true
     }
   ]
 }
