@@ -5,6 +5,20 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Debug Tests",
+      "type": "node",
+      "request": "launch",
+      "protocol": "inspector",
+      "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
+      "args": [
+        "--runInBand",
+        "${fileBasename}",
+        "--no-cache"
+      ],
+      "console": "integratedTerminal",
+      "sourceMaps": true
+    },
+    {
       "type": "chrome",
       "request": "launch",
       "name": "Launch Dev Test App",
