@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FooterComponent } from './footer.component';
+import { TranslateModule } from '@ngx-translate/core';
+import { FooterSandboxService } from './footer-sandbox.service';
 
 describe('FooterComponent', () => {
   let component: FooterComponent;
@@ -8,7 +10,11 @@ describe('FooterComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FooterComponent ]
+      imports: [
+        TranslateModule.forRoot()
+      ],
+      declarations: [ FooterComponent ],
+      providers: [FooterSandboxService]
     })
     .compileComponents();
   }));
